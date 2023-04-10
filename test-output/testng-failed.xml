@@ -13,15 +13,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.rediff.qa.testcases.CreateAccountTest -->
-      <class name="com.rediff.qa.testcases.LoginTest">
-        <methods>
-          <include name="verifyRediffLoginWithValidUserNameAndEmptyPassword"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyRediffLoginWithEmptyUserNameAndEmptyPassword"/>
-          <include name="verifyRediffLoginWithValidUserNameAndValidPassword" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- com.rediff.qa.testcases.LoginTest -->
     </classes>
   </test> <!-- Rediff Testcases(failed) -->
 </suite> <!-- Failed suite [Rediff Hybrid Automation Suite] -->
