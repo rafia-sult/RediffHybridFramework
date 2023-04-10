@@ -9,27 +9,27 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class SupplyTestData {
+public class SupplyTestDataFromDataProviderAndExcel {
 	public static FileInputStream ip;
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
 
-	//this one is for regular thing if you want to do  
-	@DataProvider(name = "RediffDataProviderSupply")
-	public static Object[][] dataSupplyFrom2DimensionalObjectArray() {
-
-		Object[][] data = { { "seleniumpanda@rediffmail.com", "Selenium@123" },
-				{ "Mohamedboudgui@rediffmail.com", "Medbdgo7o7@" }, 
-				{ "seleniumpanda1@rediffmail.com", "Donkey@123" },
-				{ "seleniumpanda3@rediffmail.com", "monday1234" } };
-
-		return data;
-	}
+//	//this one is for regular thing if you want to do  
+//	@DataProvider(name = "RediffDataProviderSupply")
+//	public static Object[][] dataSupplyFrom2DimensionalObjectArray() {
+//
+//		Object[][] data = { { "seleniumpanda@rediffmail.com", "Selenium@123" },
+//				{ "Mohamedboudgui@rediffmail.com", "Medbdgo7o7@" }, 
+//				{ "seleniumpanda1@rediffmail.com", "Donkey@123" },
+//				{ "seleniumpanda3@rediffmail.com", "monday1234" } };
+//
+//		return data;
+//	}
 	
 	//this is for purely dominant for excel sheet
 	@DataProvider(name = "RediffExcelDataWithDataProvider")
 	public static Object[][] excelSheetDataSupply() throws Exception {
-		Object[][]data = SupplyTestData.getRediffTestDataFromExcelSheet("Login");
+		Object[][]data = SupplyTestDataFromDataProviderAndExcel.getRediffTestDataFromExcelSheet("Login");
 		return data;
 	}
 

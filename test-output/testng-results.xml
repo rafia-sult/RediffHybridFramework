@@ -1,17 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="9" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="16" passed="12" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T07:13:21 EDT" name="Default suite" finished-at="2023-04-09T07:14:32 EDT" duration-ms="71249">
+  <suite started-at="2023-04-10T13:28:29 EDT" name="Rediff Hybrid Automation Suite" finished-at="2023-04-10T13:30:45 EDT" duration-ms="136461">
     <groups>
     </groups>
-    <test started-at="2023-04-09T07:13:21 EDT" name="Default test" finished-at="2023-04-09T07:14:32 EDT" duration-ms="71249">
-      <class name="com.rediff.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:22 EDT" name="setUp" finished-at="2023-04-09T07:13:32 EDT" duration-ms="9852" status="PASS">
+    <test started-at="2023-04-10T13:28:29 EDT" name="Rediff Testcases" finished-at="2023-04-10T13:30:45 EDT" duration-ms="136461">
+      <class name="com.rediff.qa.testcases.CreateAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:12 EDT" name="setUp" finished-at="2023-04-10T13:30:17 EDT" duration-ms="5026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:32 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-09T07:13:39 EDT" duration-ms="6411" status="PASS">
+        <test-method signature="varifyCreateAccountByEnteringAllValidFields()[pri:1, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:17 EDT" name="varifyCreateAccountByEnteringAllValidFields" finished-at="2023-04-10T13:30:17 EDT" duration-ms="514" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at com.rediff.qa.pages.CreateAccountPage.enterMobileNo(CreateAccountPage.java:88)
+at com.rediff.qa.testcases.CreateAccountTest.varifyCreateAccountByEnteringAllValidFields(CreateAccountTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varifyCreateAccountByEnteringAllValidFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:17 EDT" name="tearDown" finished-at="2023-04-10T13:30:18 EDT" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:18 EDT" name="setUp" finished-at="2023-04-10T13:30:23 EDT" duration-ms="5138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCreateAccountBySkippingAllValidFields()[pri:2, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:23 EDT" name="verifyCreateAccountBySkippingAllValidFields" finished-at="2023-04-10T13:30:23 EDT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountBySkippingAllValidFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:23 EDT" name="tearDown" finished-at="2023-04-10T13:30:23 EDT" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:23 EDT" name="setUp" finished-at="2023-04-10T13:30:28 EDT" duration-ms="5334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCreateAccountByEnteringFullNameAndOtherFieldsBlank()[pri:3, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:28 EDT" name="verifyCreateAccountByEnteringFullNameAndOtherFieldsBlank" finished-at="2023-04-10T13:30:28 EDT" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByEnteringFullNameAndOtherFieldsBlank -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:28 EDT" name="tearDown" finished-at="2023-04-10T13:30:28 EDT" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:28 EDT" name="setUp" finished-at="2023-04-10T13:30:34 EDT" duration-ms="5048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCreateAccountByEnteringFullNameAndRediffmailIDButOtherFieldsBlank()[pri:4, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:34 EDT" name="verifyCreateAccountByEnteringFullNameAndRediffmailIDButOtherFieldsBlank" finished-at="2023-04-10T13:30:34 EDT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByEnteringFullNameAndRediffmailIDButOtherFieldsBlank -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:34 EDT" name="tearDown" finished-at="2023-04-10T13:30:34 EDT" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:34 EDT" name="setUp" finished-at="2023-04-10T13:30:39 EDT" duration-ms="4864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCreateAccountByEnteringUptoPassword()[pri:5, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:39 EDT" name="verifyCreateAccountByEnteringUptoPassword" finished-at="2023-04-10T13:30:39 EDT" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByEnteringUptoPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:39 EDT" name="tearDown" finished-at="2023-04-10T13:30:39 EDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:39 EDT" name="setUp" finished-at="2023-04-10T13:30:45 EDT" duration-ms="5424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCreateAccountByEnteringUptoRetypePassword()[pri:6, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:45 EDT" name="verifyCreateAccountByEnteringUptoRetypePassword" finished-at="2023-04-10T13:30:45 EDT" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreateAccountByEnteringUptoRetypePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.CreateAccountTest@48075da3]" started-at="2023-04-10T13:30:45 EDT" name="tearDown" finished-at="2023-04-10T13:30:45 EDT" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rediff.qa.testcases.CreateAccountTest -->
+      <class name="com.rediff.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:28:30 EDT" name="setUp" finished-at="2023-04-10T13:28:39 EDT" duration-ms="8996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:28:39 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-10T13:28:45 EDT" duration-ms="6305" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,47 +146,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:39 EDT" name="tearDown" finished-at="2023-04-09T07:13:40 EDT" duration-ms="1431" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:28:45 EDT" name="tearDown" finished-at="2023-04-10T13:28:46 EDT" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:40 EDT" name="setUp" finished-at="2023-04-09T07:13:46 EDT" duration-ms="6338" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:28:46 EDT" name="setUp" finished-at="2023-04-10T13:28:53 EDT" duration-ms="6999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:46 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-09T07:13:58 EDT" duration-ms="11632" status="FAIL">
+        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:28:53 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-10T13:29:03 EDT" duration-ms="10249" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mohamedboudgui@rediffmail.com]]>
+                <![CDATA[Mohamedboudguig@rediffmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Medbdgo7o7@]]>
+                <![CDATA[Medbdg0707@]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Unable to locate element: .rd_logout
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7014b06d-cef2-420c-94f7-3537475c18ee, findElement {using=class name, value=rd_logout}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:13183, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17536, moz:profile: C:\Users\RAFIAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13183/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7014b06d-cef2-420c-94f7-3537475c18ee]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6db37900ea112641ef36d223b40313bf, clickElement {id=d7aae86e-9bf5-4d0c-bf70-c91bbfa357a0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62387/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6db37900ea112641ef36d223b40313bf)] -> class name: signinbtn]
+Session ID: 6db37900ea112641ef36d223b40313bf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .rd_logout
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7014b06d-cef2-420c-94f7-3537475c18ee, findElement {using=class name, value=rd_logout}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:13183, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17536, moz:profile: C:\Users\RAFIAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13183/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7014b06d-cef2-420c-94f7-3537475c18ee
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6db37900ea112641ef36d223b40313bf, clickElement {id=d7aae86e-9bf5-4d0c-bf70-c91bbfa357a0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62387/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6db37900ea112641ef36d223b40313bf)] -> class name: signinbtn]
+Session ID: 6db37900ea112641ef36d223b40313bf
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -80,11 +201,16 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at com.rediff.qa.testcases.LoginTest.verifyRediffLoginWithValidUserNameAndValidPassword(LoginTest.java:41)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.rediff.qa.pages.LoginPage.clickOnsigninButton(LoginPage.java:44)
+at com.rediff.qa.testcases.LoginTest.verifyRediffLoginWithValidUserNameAndValidPassword(LoginTest.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,19 +241,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:58 EDT" name="tearDown" finished-at="2023-04-09T07:13:59 EDT" duration-ms="933" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:03 EDT" name="tearDown" finished-at="2023-04-10T13:29:03 EDT" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:13:59 EDT" name="setUp" finished-at="2023-04-09T07:14:06 EDT" duration-ms="7156" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:03 EDT" name="setUp" finished-at="2023-04-10T13:29:08 EDT" duration-ms="4621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:14:06 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-09T07:14:12 EDT" duration-ms="6340" status="PASS">
+        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:08 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-10T13:29:13 EDT" duration-ms="5166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,47 +269,119 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:14:12 EDT" name="tearDown" finished-at="2023-04-09T07:14:13 EDT" duration-ms="990" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:13 EDT" name="tearDown" finished-at="2023-04-10T13:29:13 EDT" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:14:13 EDT" name="setUp" finished-at="2023-04-09T07:14:20 EDT" duration-ms="6366" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:13 EDT" name="setUp" finished-at="2023-04-10T13:29:18 EDT" duration-ms="4482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:14:20 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-09T07:14:31 EDT" duration-ms="11511" status="FAIL">
+        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:18 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-10T13:29:25 EDT" duration-ms="7473" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[seleniumpanda3@rediffmail.com]]>
+                <![CDATA[chowdhurygs@rediffmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[monday1234]]>
+                <![CDATA[Shajlee1@]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:25 EDT" name="tearDown" finished-at="2023-04-10T13:29:25 EDT" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:25 EDT" name="setUp" finished-at="2023-04-10T13:29:31 EDT" duration-ms="6150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:1, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:31 EDT" name="verifyRediffLoginWithValidUserNameAndValidPassword" data-provider="RediffExcelDataWithDataProvider" finished-at="2023-04-10T13:29:39 EDT" duration-ms="7466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[homa_rahimi@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Winter2021?]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:39 EDT" name="tearDown" finished-at="2023-04-10T13:29:39 EDT" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:39 EDT" name="setUp" finished-at="2023-04-10T13:29:44 EDT" duration-ms="4614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithInvalidUserNameAndInvalidPassword()[pri:2, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:44 EDT" name="verifyRediffLoginWithInvalidUserNameAndInvalidPassword" finished-at="2023-04-10T13:29:45 EDT" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithInvalidUserNameAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:45 EDT" name="tearDown" finished-at="2023-04-10T13:29:45 EDT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:45 EDT" name="setUp" finished-at="2023-04-10T13:29:50 EDT" duration-ms="5711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUserNameAndInvalidPassword()[pri:3, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:50 EDT" name="verifyRediffLoginWithValidUserNameAndInvalidPassword" finished-at="2023-04-10T13:29:51 EDT" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUserNameAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:51 EDT" name="tearDown" finished-at="2023-04-10T13:29:51 EDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:51 EDT" name="setUp" finished-at="2023-04-10T13:29:56 EDT" duration-ms="4643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithEmptyUserNameAndValidPassword()[pri:4, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:56 EDT" name="verifyRediffLoginWithEmptyUserNameAndValidPassword" finished-at="2023-04-10T13:29:56 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithEmptyUserNameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:56 EDT" name="tearDown" finished-at="2023-04-10T13:29:56 EDT" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:29:56 EDT" name="setUp" finished-at="2023-04-10T13:30:12 EDT" duration-ms="15452" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: .rd_logout
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a5b91272-b745-4a94-994a-7ac6cb680508, findElement {using=class name, value=rd_logout}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:11508, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6348, moz:profile: C:\Users\RAFIAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:11508/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5b91272-b745-4a94-994a-7ac6cb680508]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: .rd_logout
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a5b91272-b745-4a94-994a-7ac6cb680508, findElement {using=class name, value=rd_logout}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:11508, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6348, moz:profile: C:\Users\RAFIAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:11508/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a5b91272-b745-4a94-994a-7ac6cb680508
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -196,17 +394,25 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at com.rediff.qa.testcases.LoginTest.verifyRediffLoginWithValidUserNameAndValidPassword(LoginTest.java:41)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.rediff.qa.pages.LandingPage.clickOnSignInLink(LandingPage.java:30)
+at com.rediff.qa.testcases.LoginTest.setUp(LoginTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -231,15 +437,191 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRediffLoginWithValidUserNameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@7674f035]" started-at="2023-04-09T07:14:31 EDT" name="tearDown" finished-at="2023-04-09T07:14:32 EDT" duration-ms="953" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithValidUserNameAndEmptyPassword()[pri:5, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:30:12 EDT" name="verifyRediffLoginWithValidUserNameAndEmptyPassword" finished-at="2023-04-10T13:30:12 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.rediff.qa.pages.LandingPage.clickOnSignInLink(LandingPage.java:30)
+at com.rediff.qa.testcases.LoginTest.setUp(LoginTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithValidUserNameAndEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:30:12 EDT" name="tearDown" finished-at="2023-04-10T13:30:12 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:30:12 EDT" name="setUp" finished-at="2023-04-10T13:30:12 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRediffLoginWithEmptyUserNameAndEmptyPassword()[pri:6, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:30:12 EDT" name="verifyRediffLoginWithEmptyUserNameAndEmptyPassword" finished-at="2023-04-10T13:30:12 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=111.0.5563.147)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [504a67b1de489d0ea28a73c926b7bbee, clickElement {id=5ce7a360-25b8-4bd4-b25a-9df79cf2a542}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63162/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (504a67b1de489d0ea28a73c926b7bbee)] -> class name: signin]
+Session ID: 504a67b1de489d0ea28a73c926b7bbee
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.rediff.qa.pages.LandingPage.clickOnSignInLink(LandingPage.java:30)
+at com.rediff.qa.testcases.LoginTest.setUp(LoginTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRediffLoginWithEmptyUserNameAndEmptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.rediff.qa.testcases.LoginTest@25ce9dc4]" started-at="2023-04-10T13:30:12 EDT" name="tearDown" finished-at="2023-04-10T13:30:12 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.rediff.qa.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Rediff Testcases -->
+  </suite> <!-- Rediff Hybrid Automation Suite -->
 </testng-results>

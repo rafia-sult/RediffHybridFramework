@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -17,6 +19,7 @@ public class TestBase {
 	public Properties prop;
 	public Properties dataprop;
 	public FileInputStream ip;
+	public ChromeOptions options;
 	
 	public TestBase() throws Exception {
 		//this is for create account
@@ -32,14 +35,18 @@ public class TestBase {
 
 	public WebDriver initializeBrowserAndOpenApplication(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			options = new ChromeOptions();
+			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			options.addArguments("--start-maximized");
+			options.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(options);
+			
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		}
 		
-		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Utilities.implicitWaitTime));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Utilities.pageLoadTime));
@@ -47,12 +54,7 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 		return driver;
 		
-//		options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-//		options.addArguments("--start-maximized");
-//		options.addArguments("--remote-allow-origins=*");
-//		driver = new ChromeDriver(options);
-//		driver.get("https://rediff.com");
-//		return driver;
+
 	}
 
 }
